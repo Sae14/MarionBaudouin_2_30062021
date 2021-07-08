@@ -2,15 +2,33 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <html lang="fr">
         <link rel="stylesheet" href="stylesheet.css" />
         <script src="https://kit.fontawesome.com/d92d4ce81a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Reservia</title>
+
+        <meta property="og:title" content="Reservia"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://sae14.github.io/MarionBaudouin_2_30062021/"/>
+        <meta property="og:image" content="images/logo/Reservia@3x.png"/>
+        <meta property="og:description" content="Trouvez votre hébergement pour des vacances de rêve"/>
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="https://sae14.github.io/MarionBaudouin_2_30062021/">
+        <meta name="twitter:title" content="Reservia">
+        <meta name="twitter:description" content="Trouvez votre hébergement pour des vacances de rêve">
+        <meta name="twitter:creator"content="Sae14">
+        <meta name="twitter:image" content="images/logo/Reservia@3x.png">
+
     </head>
 
     <body>
 
         <header>
-            <nav id="top-menu">
+            <nav class="top-menu">
                 <a href="#"><img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia"></a>
                 <ul class="top-menu-list">
                     <li><a href="#rooms">Hébergements</a></li>
@@ -20,28 +38,32 @@
             </nav>
         </header>
 
-        <section>
+        <section class="search-section">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <span><label for="city"><i class="fas fa-map-marker-alt"></i></label></span> 
+            <span class="marker-design"><label for="city"><i class="fas fa-map-marker-alt"></i></label></span> 
             <input type="text" value="Marseille, France" name="city" id="city">
             <input type="button" value="Rechercher">
-            <ul id="filters-container">
-                <p>Filtres</p>
-                <li class="filters"><span><i class="fas fa-money-bill-wave icon-filters"></i></span>Economique</li>
-                <li class="filters"><span><i class="fas fa-child icon-filters"></i></span>Familial</li>
-                <li class="filters"><span><i class="fas fa-heart icon-filters"></i></span>Romantique</li>
-                <li class="filters"><span><i class="fas fa-dog icon-filters"></i></span>Animaux autorisés</li>
-            </ul>
-            <p><span><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="filters-title-container">
+                 <p>Filtres</p>
+                  <ul class="filters-container">
+                    <li class="filters"><span><i class="fas fa-money-bill-wave icon-filters"></i></span>Economique</li>
+                    <li class="filters"><span><i class="fas fa-child icon-filters"></i></span>Familial</li>
+                    <li class="filters"><span><i class="fas fa-heart icon-filters"></i></span>Romantique</li>
+                    <li class="filters"><span><i class="fas fa-dog icon-filters"></i></span>Animaux autorisés</li>
+                  </ul>
+            </div>
+            <p><span class="info-design"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
-        <section id="rooms-popular-container">
+        <section class="rooms-popular-container">
             <section id="rooms">
                 <h2>Hébergements à Marseille</h2>
-                <div id="rooms-container">
+                <div class="rooms-container">
                     <article>
-                        <img class="img-room" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebière">
+                        <div class="img-room-container">
+                            <img class="img-room" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebière">
+                        </div>
                         <h3>Auberge la Cannebière</h3>
                         <p>Nuit à partir de 25€</p>
                         <span>
@@ -54,7 +76,9 @@
                     </article>
 
                     <article>
-                        <img class="img-room" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port">
+                        <div class="img-room-container">
+                            <img class="img-room" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hôtel du port">
+                        </div>
                         <h3>Hôtel du port</h3>
                         <p>Nuit à partir de 52€</p>
                         <span>
@@ -67,8 +91,10 @@
                     </article>
 
                     <article>
-                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes">
-                        <h3>Hôtel Les mouettes</h3>
+                        <div class="img-room-container">
+                            <img class="img-room" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes">
+                        </div>
+                         <h3>Hôtel Les mouettes</h3>
                         <p>Nuit à partir de 76€</p>
                         <span>
                             <i class="fas fa-star blue-star"></i>
@@ -80,7 +106,9 @@
                     </article>
 
                     <article>
-                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer">
+                        <div class="img-room-container">
+                            <img class="img-room" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer">
+                        </div>
                         <h3>Hôtel de la mer</h3>
                         <p>Nuit à partir de 46€</p>
                         <span>
@@ -93,7 +121,9 @@
                     </article>
 
                     <article>
-                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
+                        <div class="img-room-container">
+                            <img class="img-room" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
+                        </div>
                         <h3>Auberge Le Panier</h3>
                         <p>Nuit à partir de 23€</p>
                         <span>
@@ -106,7 +136,9 @@
                     </article>
 
                     <article>
-                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez amina">
+                        <div class="img-room-container">
+                            <img class="img-room" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel chez amina">
+                        </div>
                         <h3>Hôtel chez Amina</h3>
                         <p>Nuit à partir de 96€</p>
                         <span>
@@ -121,15 +153,15 @@
                 <p>Afficher plus</p>
             </section>
 
-            <section id="popular-container">
+            <section class="popular-container">
                 <div class="title-popular">
                     <h2>Les plus populaires</h2>
                     <span><i class="fas fa-chart-line"></i></span>
                 </div>
 
                 <article class="img-txt-popular">
-                    <div>
-                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hôtel le soleil du matin">
+                    <div class="img-popular-container">
+                        <img class="img-popular" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hôtel le soleil du matin">
                     </div>
                     <div>
                         <h3>Hôtel Le soleil du matin</h3>
@@ -145,8 +177,8 @@
                 </article>
 
                 <article class="img-txt-popular">
-                    <div>
-                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau chambres d'hôtes">
+                    <div class="img-popular-container">
+                        <img class="img-popular" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau chambres d'hôtes">
                     </div>
                     <div>
                         <h3>Au cœur de l'eau Chambres d'hôtes</h3>
@@ -162,8 +194,8 @@
                 </article>
 
                 <article class="img-txt-popular">
-                    <div>
-                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel tout bleu et blanc">
+                    <div class="img-popular-container">
+                        <img class="img-popular" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel tout bleu et blanc">
                     </div>
                     <div>
                         <h3>Hôtel Tout bleu et Blanc</h3>
@@ -182,7 +214,7 @@
 
         <section id="activities">
             <h2>Activités à Marseille</h2>
-            <div id="activities-container">
+            <div class="activities-container">
                 <article>
                     <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
                     <h3>Vieux Port</h3>
@@ -228,14 +260,16 @@
             </nav>
 
             <nav>
-                <ul>Nos hébergements
+                <p>Nos hébergements</p>
+                <ul>
                     <li>Charte qualité</li>
                     <li>Soumettre votre hôtel</li>
                 </ul>
             </nav>
 
             <nav>
-                <ul>Assistance
+                <p>Assistance</p>
+                <ul>
                     <li>Centre d'aide</li>
                     <li>Nous contacter</li>
                 </ul>

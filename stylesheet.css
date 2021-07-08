@@ -1,50 +1,199 @@
-@font-face {
-    font-family: 'raleway';
-    src: url('raleway/Raleway-VariableFont_wght.ttf') format('truetype');
-}
-
 * {
-    font-family: raleway,'Trebuchet MS', sans-serif;
+    font-family: 'raleway', 'Trebuchet MS', sans-serif;
 }
 
-/*#logo {
-    height: 50%;
-    width: auto;
-}*/
+header {
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+#logo {
+    width: 35%;
+}
 
 li {
     list-style-type: none;
 }
 
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu-list {
+    display: flex;
+}
+
+ul.top-menu-list li {
+    margin-right: 40px;
+}
+
+.top-menu-list a:link {
+    text-decoration: none;
+}
+
+.top-menu-list a:visited {
+    text-decoration: none;
+}
+
+.top-menu-list a:hover {
+    border-top: #0065FC solid 2px;
+    padding-top: 30px;
+    color: #0065FC;
+}
+
+.top-menu-list a:active {
+    text-decoration: none;
+}
+
+.search-section {
+    margin-left: 35px;
+}
+
+.marker-design {
+    background-color: #F2F2F2;
+    padding: 13px;
+}
+
+input[type="text"] {
+    block-size: 30px;
+    border: 1px solid #F2F2F2;
+    border-right: none;
+}
+
+input[type="button"] {
+    background-color: #0065FC;
+    color: white;
+    padding: 10px;
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+}
+
+.filters-title-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.filters-container {
+    display: flex;
+}
+
 .filters {
     border: 2px #F2F2F2 solid;
-    border-radius: 15px;
+    border-radius: 30px;
+    padding: 10px 10px 10px 0px;
+    margin-right: 14px;
+}
+
+.filters span {
+    background-color: #DEEBFF;
+    border: 2px #DEEBFF solid;
+    border-radius: 18px;
+    padding: 9px;
 }
 
 .icon-filters {
-    background-color: #DEEBFF;
     color: #0065FC;
+}
+
+.info-design {
+    border: 2px #F2F2F2 solid;
     border-radius: 15px;
-    padding-right: 10px;
-    margin: 10px;
 }
 
 .fa-info {
     color: #0065FC;
-    border: 2px #F2F2F2 solid;
-    border-radius: 15px;
 }
 
-#rooms, #popular-container, footer {
+.rooms-popular-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+#rooms {
+    margin-right: 25px;
+    padding: 10px;
+    width: 75%;
+}
+
+.rooms-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+/*.img-room-container {
+    padding: 3px;
+}*/
+
+.img-room {
+    width: 100%;
+    margin: 5px;
+}
+
+.blue-star {
+    color: #0065FC;
+}
+
+.empty-star {
+    color: #F2F2F2;
+}
+
+#rooms, .popular-container, footer {
     background-color: #F2F2F2;
 }
 
-#rooms, #popular-container, article {
+#rooms, .popular-container, article {
     border-radius: 15px;
+}
+
+.rooms-container article {
+    margin-right: 5px;
+    width: 25%;
 }
 
 article  {
     background-color: white;
+}
+
+.popular-container {
+    padding: 10px;
+}
+
+.title-popular {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.img-txt-popular {
+    display:flex;
+}
+
+/*.img-popular-container {
+    margin: 3px;
+}*/
+
+.img-popular {
+    width: 100%;
+    margin: 5px;
+}
+
+#activities {
+    margin: 35px;
+}
+
+.activities-container {
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 350px;
 }
 
 /* #rooms img {
@@ -62,73 +211,7 @@ article  {
     height: auto;
 } */
 
-img {
-    width: 200px;
-    height: 100px;
-}
-
-.blue-star {
-    color: #0065FC;
-}
-
-.empty-star {
-    color: #F2F2F2;
-}
-
-
-
-/* ZONE DEDIEE AU FLEX */
-
-#top-menu {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-menu-list {
-    display: flex;
-}
-
-#filters-container {
-    display: flex;
-}
-
-#rooms-popular-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-#rooms-container {
-    width: 75%;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-}
-
 /*#popular-container {
     width: 25%;
     height: 300px;
 }*/
-
-.title-popular {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.img-txt-popular {
-    display:flex;
-}
-
-#activities-container {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap:nowrap;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 350px;
-}
