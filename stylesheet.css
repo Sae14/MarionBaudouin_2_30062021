@@ -2,13 +2,16 @@
     font-family: 'raleway', 'Trebuchet MS', sans-serif;
 }
 
+/* Header */
+
 header {
-    margin-left: 35px;
+    margin-left: 40px;
     margin-top: 25px;
 }
 
 #logo {
-    width: 35%;
+    width: 120px;
+    height: 100%;
 }
 
 li {
@@ -29,11 +32,12 @@ ul.top-menu-list li {
     font-weight: 600;
 }
 
-.top-menu-list a:link {
+a, .top-menu-list a:link {
     text-decoration: none;
+    color: black;
 }
 
-.top-menu-list a:visited {
+a, .top-menu-list a:visited {
     text-decoration: none;
     color: black;
 }
@@ -48,8 +52,10 @@ ul.top-menu-list li {
     text-decoration: none;
 }
 
+/* Search section */
+
 .search-section {
-    margin-left: 35px;
+    margin-left: 45px;
 }
 
 h1 {
@@ -77,9 +83,10 @@ h1 + p {
 }
 
 input[type="text"] {
-    block-size: 30px;
     border: none;
     padding-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 800;
 }
 
@@ -111,9 +118,8 @@ input[type="button"] {
 
 .filters span {
     background-color: #DEEBFF;
-    border: 2px #DEEBFF solid;
     border-radius: 18px;
-    padding: 9px;
+    padding: 11px;
     margin-right: 13px;
 }
 
@@ -132,29 +138,26 @@ input[type="button"] {
     color: #0065FC;
 }
 
+/* Section rooms popular */
+
 .rooms-popular-container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 25px;
+    margin: 45px;
 }
 
+/* Rooms */
+
 #rooms {
-    margin-right: 25px;
-    padding: 18px 18px 18px 33px;
+    margin-right: 45px;
+    padding: 18px 20px 18px 50px;
     width: 70%;
 }
 
 .rooms-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 17px;
 }
-
-/*.img-room-container {
-    padding: 3px;
-}*/
 
 .img-room {
     height: 140px;
@@ -181,24 +184,26 @@ input[type="button"] {
 }
 
 .rooms-container article {
-    width: 25%;
-    margin-bottom: 23px;
-    padding-bottom: 7px;
+    width: 29%;
+    margin-bottom: 40px;
+    margin-right: 40px;
 }
 
 article  {
     background-color: white;
     overflow: hidden;
-    padding: 5px;
+    border: 4px solid #FFFFFF;
 }
 
 .description-room-card {
     padding-left: 8px;
 }
 
-.rooms-more {
+.bold {
     font-weight: 700;
 }
+
+/* Popular rooms */
 
 .popular-container {
     width: 30%;
@@ -209,14 +214,18 @@ article  {
     align-items: baseline;
     justify-content: space-between;
     margin-top: 18px;
-    margin-left: 27px;
-    margin-right: 27px;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
 .popular-container article {
-    display:flex;
-    margin: 5px 25px 22px 25px;
-    height: 25%;
+    margin: 5px 50px 50px 50px;
+    height: 22%;
+}
+
+.link-popular-card {
+    display: flex;
+    height: 100%;
 }
 
 .img-popular {
@@ -227,23 +236,47 @@ article  {
     border-radius: 10px 0px 0px 10px;
 }
 
-.description-popular-card {
-    padding-left: 8px;
+.description-popular-card, .description-activity-card {
+    margin-left: 22px;
 }
 
+/* Activities */
+
 #activities {
-    margin: 35px;
+    margin: 40px 0px 60px 40px;
 }
 
 .activities-container {
     display:flex;
     flex-wrap:nowrap;
-    /*justify-content: space-around;*/
 }
 
 .activity-card, .activity-card-small {
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
+
+.activity-small-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-card {
+
+}
+
+.activity-card-small {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*.top {
+    height: 50%;
+}
+
+.bottom {
+    height: 40%;
+}*/
 
 .activity-card img {
     height: 450px;
@@ -251,21 +284,23 @@ article  {
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0px 0px;
+
 }
 
 .activity-card-small img {
-    height: 225px;
+    height: 150px;
     width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Footer */
+
 footer {
     display: flex;
     justify-content: space-between;
-    padding-right: 350px;
-    padding-left: 45px;
+    padding : 30px 400px 25px 45px;
 }
 
 .footer-padding {
@@ -273,5 +308,5 @@ footer {
 }
 
 .footer-padding li {
-    padding-bottom: 7px;
+    padding-bottom: 11px;
 }
