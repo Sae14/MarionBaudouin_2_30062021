@@ -12,6 +12,7 @@ header {
 #logo {
     width: 120px;
     height: 100%;
+    object-fit: contain;
 }
 
 li {
@@ -48,7 +49,7 @@ a, .top-menu-list a:visited {
     color: #0065FC;
 }
 
-.top-menu-list a:active {
+a, .top-menu-list a:active {
     text-decoration: none;
 }
 
@@ -114,6 +115,13 @@ input[type="button"] {
     border-radius: 30px;
     padding: 10px 18px 10px 0px;
     margin-right: 33px;
+}
+
+.filters:hover {
+    border: 2px #0065FC;
+    border-style: dashed solid;
+    background-color: #F2F2F2;
+    overflow: hidden;
 }
 
 .filters span {
@@ -261,22 +269,10 @@ article  {
     justify-content: space-between;
 }
 
-.activity-card {
-
-}
-
 .activity-card-small {
     margin-left: 40px;
     margin-right: 40px;
 }
-
-/*.top {
-    height: 50%;
-}
-
-.bottom {
-    height: 40%;
-}*/
 
 .activity-card img {
     height: 450px;
