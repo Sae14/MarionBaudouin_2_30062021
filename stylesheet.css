@@ -6,13 +6,7 @@
 
 header {
     margin-left: 40px;
-    margin-top: 25px;
-}
-
-#logo {
-    width: 120px;
-    height: 100%;
-    object-fit: contain;
+    padding-top: 20px;
 }
 
 li {
@@ -22,6 +16,7 @@ li {
 .top-menu {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .top-menu-list {
@@ -29,28 +24,38 @@ li {
 }
 
 ul.top-menu-list li {
-    margin-right: 40px;
+    margin-right: 60px;
     font-weight: 600;
 }
 
-a, .top-menu-list a:link {
+.classic-link, .menu-link a:link {
     text-decoration: none;
     color: black;
 }
 
-a, .top-menu-list a:visited {
+.classic-link, .menu-link a:visited {
     text-decoration: none;
     color: black;
 }
 
-.top-menu-list a:hover {
+.menu-link a:hover {
     border-top: #0065FC solid 2px;
-    padding-top: 30px;
+    padding-top: 55px;
     color: #0065FC;
 }
 
-a, .top-menu-list a:active {
+.register-link a:link {
     text-decoration: none;
+    color: #0065FC;
+}
+
+.register-link a:visited {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+.register-link a:hover {
+    font-weight: 700;
 }
 
 /* Search section */
@@ -111,7 +116,7 @@ input[type="button"] {
 }
 
 .filters {
-    border: 2px #F2F2F2 solid;
+    border: 3px #F2F2F2 solid;
     border-radius: 30px;
     padding: 10px 18px 10px 0px;
     margin-right: 33px;
@@ -120,19 +125,19 @@ input[type="button"] {
 .filters:hover {
     border: 2px #0065FC;
     border-style: dashed solid;
-    background-color: #F2F2F2;
     overflow: hidden;
 }
 
 .filters span {
     background-color: #DEEBFF;
-    border-radius: 18px;
-    padding: 11px;
+    border-radius: 20px;
+    padding: 12px 15px 12px 12px;
     margin-right: 13px;
 }
 
 .icon-filters {
     color: #0065FC;
+    width: 15px;
 }
 
 .info-design {
@@ -142,9 +147,11 @@ input[type="button"] {
     margin-right: 7px;
 }
 
-.fa-info {
+.icon-info {
     color: #0065FC;
+    font-size: 13px;
 }
+
 
 /* Section rooms popular */
 
@@ -224,6 +231,10 @@ article  {
     margin-top: 18px;
     margin-left: 55px;
     margin-right: 55px;
+}
+
+.icon-popular {
+    font-size: 25px;
 }
 
 .popular-container article {
