@@ -5,30 +5,31 @@
     /* header */
 
     header {
-        padding-left: 0;
+        padding-left: 0px;
     }
 
     nav.top-menu-desktop {
         display: none;
     }
 
-    /*nav.top-menu-mobile-first {
+    div.menu-mobile {
+        display: block;
+    }
+
+    nav.top-menu-mobile-first {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
     }
 
     nav.top-menu-mobile-second {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
     }
-*/
+
     /* search section */
 
     section.search-section {
-        padding-left: 20px;
-        padding-right: 10px;
+        padding-left: 10px;
     }
 
     div.search-border {
@@ -57,38 +58,31 @@
 
     div.rooms-popular-container {
         flex-wrap: wrap;
-        flex-direction: column-reverse;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
+        flex-direction: column-reverse;        
+        padding: 0px 0px 0px 0px;
     }
 
     /* popular */
 
     div.popular-container {
-        width: 90%;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
+        padding: 5px;
     }
 
     img.img-popular {
         height: 160px;
-        width: 150px;
+        width: 120px;
     }
 
 /* rooms */
 
     section#rooms {
         background: none;
-        width: 90%;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0px;
+        padding-right: 10px;
         padding-bottom: 0;
     }
 
     div.rooms-container {
-        width: 100%;
         padding-bottom: 30px;
     }
 
@@ -132,7 +126,6 @@
         flex-direction: column;
         margin-right: 0px;
         padding-right: 0px;
-        width: 100%;
     }
 
     footer {
@@ -144,6 +137,22 @@
 /* responsive tablette */
 
 @media (max-width:768px) {
+
+    img#logo {
+        padding-left: 20px;
+    }
+
+    section.search-section {
+        padding-left: 20px;
+    }
+
+    ul.filters-container {
+        padding-left: 0px;
+    }
+
+    li.filters {
+        margin-right: 5px;
+    }
 
     div.rooms-popular-container {
         flex-wrap: wrap;
@@ -174,8 +183,15 @@
         flex-wrap: wrap;
     }
 
+    section#activities img {
+        width: 320px;
+    }
+
+
+
 }
 
+/* desktop */
 
 * {
     font-family: 'raleway', 'Trebuchet MS', sans-serif;
@@ -188,16 +204,13 @@ body {
 
 /* Header */
 
-header {
-    padding-left: 50px;
-}
-
-nav.top-menu-mobile {
+div.menu-mobile {
     display: none;
 }
 
 #logo {
     padding-top: 25px;
+    padding-left: 50px;
 }
 
 li {
