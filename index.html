@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet.css" />
         <script src="https://kit.fontawesome.com/d92d4ce81a.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,7 @@
     <body>
 
         <header>
-            <nav class="top-menu">
+            <nav class="top-menu-desktop">
                 <a href="#"><img id="logo" src="images/logo/Reservia.svg" alt="logo reservia"></a>
                 <ul class="top-menu-list">
                     <li class="menu-link"><a href="#rooms">Hébergements</a></li>
@@ -37,6 +38,20 @@
                     <li class="register-link"><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
+<!--
+            <nav class="top-menu-mobile-first">
+                <ul class="top-menu-list">
+                    <li><a href="#"><img id="logo" src="images/logo/Reservia.svg" alt="logo reservia"></a></li>
+                    <li class="register-link"><a href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+            <nav class="top-menu-mobile-second">
+                <ul class="top-menu-list">
+                    <li class="menu-link"><a href="#rooms">Hébergements</a></li>
+                    <li class="menu-link"><a href="#activities">Activités</a></li>
+                </ul>
+            </nav>
+        -->
         </header>
 
         <section class="search-section">
@@ -45,7 +60,8 @@
             <div class="search-border">
                 <label for="city"><span class="marker-design"><i class="fas fa-map-marker-alt"></i></span></label> 
                 <input type="text" value="Marseille, France" name="city" id="city">
-                <input type="button" value="Rechercher">
+                <button class="button-search">Rechercher</button>
+                <button class="button-search-mobile"><i class="fas fa-search"></i></button>
             </div>
             <div class="filters-title-container">
                  <p>Filtres</p>
@@ -56,7 +72,12 @@
                     <li class="filters"><span><i class="fas fa-dog icon-filters"></i></span>Animaux autorisés</li>
                   </ul>
             </div>
-            <p><span class="info-design"><i class="fas fa-info icon-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="info-available-rooms">
+                <div>
+                    <span class="info-design"><i class="fas fa-info icon-info"></i></span>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
 
         <div class="rooms-popular-container">
@@ -304,31 +325,35 @@
         </section>
 
         <footer>
-            <nav>
-                <h3>A propos</h3>
-                <ul class="footer-padding">
-                    <li><a class="classic-link" href="#">Fonctionnement du site</a></li>
-                    <li><a class="classic-link" href="#">Conditions générales de vente</a></li>
-                    <li><a class="classic-link" href="#">Données et confidentialité</a></li>
-                </ul>
-            </nav>
+            <div class="bottom-block">
+                <nav>
+                    <h3>A propos</h3>
+                    <ul class="footer-padding">
+                        <li><a class="classic-link" href="#">Fonctionnement du site</a></li>
+                        <li><a class="classic-link" href="#">Conditions générales de vente</a></li>
+                        <li><a class="classic-link" href="#">Données et confidentialité</a></li>
+                    </ul>
+                </nav>
 
-            <nav>
-                <h3>Nos hébergements</h3>
-                <ul class="footer-padding">
-                    <li><a class="classic-link" href="#">Charte qualité</a></li>
-                    <li><a class="classic-link" href="#">Soumettre votre hôtel</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <h3>Nos hébergements</h3>
+                    <ul class="footer-padding">
+                        <li><a class="classic-link" href="#">Charte qualité</a></li>
+                        <li><a class="classic-link" href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </nav>
 
-            <nav>
-                <h3>Assistance</h3>
-                <ul class="footer-padding">
-                    <li><a class="classic-link" href="#">Centre d'aide</a></li>
-                    <li><a class="classic-link" href="#">Nous contacter</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <h3>Assistance</h3>
+                    <ul class="footer-padding">
+                        <li><a class="classic-link" href="#">Centre d'aide</a></li>
+                        <li><a class="classic-link" href="#">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </footer>
+        
 
     </body>
 </html>
