@@ -1,3 +1,182 @@
+/* responsive mobile */
+
+@media (max-width: 425px)
+{
+    /* header */
+
+    header {
+        padding-left: 0;
+    }
+
+    nav.top-menu-desktop {
+        display: none;
+    }
+
+    /*nav.top-menu-mobile-first {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    nav.top-menu-mobile-second {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+*/
+    /* search section */
+
+    section.search-section {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    div.search-border {
+       margin: 20px 20px 20px 0px; 
+    }
+
+    button.button-search {
+        display: none;
+    }
+
+    button.button-search-mobile {
+        display:inline-block;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    ul.filters-container {
+        padding-left: 0;
+    }
+
+    li.filters {
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* section rooms popular */
+
+    div.rooms-popular-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    /* popular */
+
+    div.popular-container {
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    img.img-popular {
+        height: 160px;
+        width: 150px;
+    }
+
+/* rooms */
+
+    section#rooms {
+        background: none;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0;
+    }
+
+    div.rooms-container {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    #rooms article {
+        width: 100%;
+        border-color: #F2F2F2;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* activities */
+
+    div.activities-container {
+        flex-direction: column;
+    }
+
+    section#activities {
+        padding-left: 20px;
+        padding-top: 0px;
+        padding-right: 20px;
+        width: 90%;
+    }
+
+    #activities article {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    article.pomegues-activity-card, article.activity-card-small, article.activity-card-medium {
+        margin-left: 0;
+    }
+
+    #activities a.classic-link img {
+       width: 100%;
+       height: 120px;
+    }
+
+    /* footer */
+
+    div.bottom-block {
+        flex-direction: column;
+        margin-right: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    footer {
+        padding-right: 0px;
+    }
+
+}
+
+/* responsive tablette */
+
+@media (max-width:768px) {
+
+    div.rooms-popular-container {
+        flex-wrap: wrap;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    section#rooms {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 0px;
+        margin-bottom: 30px;
+    }
+
+    div.popular-container {
+        width: 100%;
+    }
+
+    div.bottom-block {
+        width: 90%;
+    }
+
+    section#activities {
+        padding-left: 15px;
+    }
+
+    div.activities-container {
+        flex-wrap: wrap;
+    }
+
+}
+
+
 * {
     font-family: 'raleway', 'Trebuchet MS', sans-serif;
 }
@@ -13,6 +192,10 @@ header {
     padding-left: 50px;
 }
 
+nav.top-menu-mobile {
+    display: none;
+}
+
 #logo {
     padding-top: 25px;
 }
@@ -21,7 +204,7 @@ li {
     list-style-type: none;
 }
 
-.top-menu {
+.top-menu-desktop {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -103,7 +286,7 @@ input[type="text"] {
     font-weight: 800;
 }
 
-input[type="button"] {
+button {
     background-color: #0065FC;
     color: white;
     font-weight: 600;
@@ -112,11 +295,16 @@ input[type="button"] {
     border: none;
 }
 
+.button-search-mobile {
+    display: none;
+}
+
 .filters-title-container {
     display: flex;
     align-items: baseline;
     font-weight: 800;
     padding-top: 10px;
+    flex-wrap: wrap;
 }
 
 .filters-container {
@@ -163,12 +351,15 @@ input[type="button"] {
     font-size: 13px;
 }
 
+div.info-available-rooms {
+    display: flex;
+}
+
 
 /* Section rooms popular */
 
 .rooms-popular-container {
     display: flex;
-    flex-wrap: nowrap;
     padding: 25px 50px 20px 50px;
 }
 
@@ -176,13 +367,14 @@ input[type="button"] {
 
 #rooms {
     margin-right: 50px;
-    padding: 18px 0px 18px 35px;
+    padding: 18px 0px 18px 25px;
     width: 70%;
 }
 
 .rooms-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .img-room {
@@ -210,10 +402,9 @@ input[type="button"] {
 }
 
 .rooms-container article {
-    width: 27%;
-    margin-bottom: 35px;
-    margin-right: 35px;
-    min-width: 130px;
+    width: 28%;
+    margin-bottom: 30px;
+    margin-right: 30px;
 }
 
 article  {
@@ -243,7 +434,7 @@ article  {
 
 .popular-container {
     width: 30%;
-    padding: 5px 95px 55px 95px;
+    padding: 5px 40px 40px 40px;
 }
 
 .title-popular {
@@ -258,9 +449,8 @@ article  {
 }
 
 .popular-container article {
-    height:24%;
-    margin-bottom: 35px;
-    min-width: 130px;
+    height:23%;
+    margin-bottom: 30px;
 }
 
 .link-popular-card {
@@ -303,7 +493,6 @@ article  {
 
 .activities-container {
     display:flex;
-    flex-wrap: nowrap;
 }
 
 .activity-card, .activity-card-small, .pomegues-activity-card, .activity-card-medium {
@@ -326,8 +515,8 @@ article  {
 }
 
 .activity-card img {
-    height: 410px;
-    width: 385px;
+    height: 390px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0px 0px;
@@ -335,24 +524,24 @@ article  {
 }
 
 .activity-card-small img {
-    height: 140px;
-    width: 420px;
+    height: 120px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0px 0px;
 }
 
 .pomegues-activity-card img {
-    height: 180px;
-    width: 420px;
+    height: 160px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0px 0px;
 }
 
 .activity-card-medium img {
-    height: 160px;
-    width: 420px;
+    height: 140px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0px 0px;
@@ -361,9 +550,13 @@ article  {
 /* Footer */
 
 footer {
+    padding: 30px 0px 25px 45px;
+}
+
+div.bottom-block {
     display: flex;
     justify-content: space-between;
-    padding : 30px 400px 25px 45px;
+    margin-right: 200px;
 }
 
 .footer-padding {
@@ -373,3 +566,4 @@ footer {
 .footer-padding li {
     padding-bottom: 11px;
 }
+
