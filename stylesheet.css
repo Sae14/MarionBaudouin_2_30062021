@@ -1,196 +1,3 @@
-/* responsive mobile */
-
-@media (max-width: 425px)
-{
-    /* header */
-
-    header {
-        padding-left: 0px;
-    }
-
-    nav.top-menu-desktop {
-        display: none;
-    }
-
-    div.menu-mobile {
-        display: block;
-    }
-
-    nav.top-menu-mobile-first {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav.top-menu-mobile-second {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /* search section */
-
-    section.search-section {
-        padding-left: 10px;
-    }
-
-    div.search-border {
-       margin: 20px 20px 20px 0px; 
-    }
-
-    button.button-search {
-        display: none;
-    }
-
-    button.button-search-mobile {
-        display:inline-block;
-        border-radius: 10px 10px 10px 10px;
-    }
-
-    ul.filters-container {
-        padding-left: 0;
-    }
-
-    li.filters {
-        margin-right: 10px;
-        margin-bottom: 15px;
-    }
-
-    /* section rooms popular */
-
-    div.rooms-popular-container {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;        
-        padding: 0px 0px 0px 0px;
-    }
-
-    /* popular */
-
-    div.popular-container {
-        padding: 5px;
-    }
-
-    img.img-popular {
-        height: 160px;
-        width: 120px;
-    }
-
-/* rooms */
-
-    section#rooms {
-        background: none;
-        padding-left: 0px;
-        padding-right: 10px;
-        padding-bottom: 0;
-    }
-
-    div.rooms-container {
-        padding-bottom: 30px;
-    }
-
-    #rooms article {
-        width: 100%;
-        border-color: #F2F2F2;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    /* activities */
-
-    div.activities-container {
-        flex-direction: column;
-    }
-
-    section#activities {
-        padding-left: 20px;
-        padding-top: 0px;
-        padding-right: 20px;
-        width: 90%;
-    }
-
-    #activities article {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    article.pomegues-activity-card, article.activity-card-small, article.activity-card-medium {
-        margin-left: 0;
-    }
-
-    #activities a.classic-link img {
-       width: 100%;
-       height: 120px;
-    }
-
-    /* footer */
-
-    div.bottom-block {
-        flex-direction: column;
-        margin-right: 0px;
-        padding-right: 0px;
-    }
-
-    footer {
-        padding-right: 0px;
-    }
-
-}
-
-/* responsive tablette */
-
-@media (max-width:768px) {
-
-    img#logo {
-        padding-left: 20px;
-    }
-
-    section.search-section {
-        padding-left: 20px;
-    }
-
-    ul.filters-container {
-        padding-left: 0px;
-    }
-
-    li.filters {
-        margin-right: 5px;
-    }
-
-    div.rooms-popular-container {
-        flex-wrap: wrap;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    section#rooms {
-        width: 100%;
-        margin-right: 0;
-        padding-bottom: 0px;
-        margin-bottom: 30px;
-    }
-
-    div.popular-container {
-        width: 100%;
-    }
-
-    div.bottom-block {
-        width: 90%;
-    }
-
-    section#activities {
-        padding-left: 15px;
-    }
-
-    div.activities-container {
-        flex-wrap: wrap;
-    }
-
-    section#activities img {
-        width: 320px;
-    }
-
-
-
-}
-
 /* desktop */
 
 * {
@@ -204,11 +11,11 @@ body {
 
 /* Header */
 
-div.menu-mobile {
+nav.menu-mobile {
     display: none;
 }
 
-#logo {
+.logo {
     padding-top: 25px;
     padding-left: 50px;
 }
@@ -262,7 +69,7 @@ ul.top-menu-list li {
 }
 
 .register-link a:hover {
-    font-weight: 700;
+    font-weight: 750;
 }
 
 /* Search section */
@@ -335,7 +142,7 @@ button {
 }
 
 .filters:hover {
-    border: 2px #0065FC;
+    border: 3px #0065FC;
     border-style: dashed solid;
     overflow: hidden;
 }
@@ -564,12 +371,9 @@ article  {
 
 footer {
     padding: 30px 0px 25px 45px;
-}
-
-div.bottom-block {
     display: flex;
     justify-content: space-between;
-    margin-right: 200px;
+    padding-right: 200px;
 }
 
 .footer-padding {
@@ -580,3 +384,300 @@ div.bottom-block {
     padding-bottom: 11px;
 }
 
+
+/* responsive mobile */
+
+@media (max-width: 425px)
+{
+/* header */
+
+    nav.top-menu-desktop {
+        display: none;
+    }
+
+    nav.menu-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    ul.top-menu-list {
+        padding-left: 0px;
+    }
+
+    .menu-mobile .register-link {
+    font-weight: 750;
+    }
+
+    .menu-mobile .menu-link a {
+        padding-bottom: 0px;
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 10px;
+    }
+
+    .menu-mobile .menu-link.border:hover {
+        border-bottom: #0065FC solid 3px;
+        color: #0065FC;
+    }
+
+    .menu-mobile .menu-link a:hover {
+        border-top: none;
+    }
+
+
+   .menu-mobile ul.top-menu-list li {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    }  
+
+    .menu-mobile .border {
+    border-bottom: #F2F2F2 solid 3px;
+    }
+
+    .logo {
+    padding-left: 5px;
+    padding-top: 0px;
+    }
+
+    .menu-mobile .register-link a {
+    padding-right: 0;
+    }
+
+    .menu-mobile .register-link {
+    padding-bottom: 0;
+    margin-left: 120px;
+    margin-top: 15px;
+    }
+
+
+
+/* search section */
+
+    h1 {
+        font-size: 23px;
+        padding-left: 5px;
+    }
+
+    section.search-section {
+        padding-left: 10px;
+    }
+
+    div.search-border {
+       margin: 30px 5px 20px 5px;
+    }
+
+    input[type="text"] {
+        font-size: 15px;
+    }
+
+    button.button-search {
+        display: none;
+    }
+
+    button.button-search-mobile {
+        display:inline-block;
+        border-radius: 10px 10px 10px 10px;
+        padding: 13px 15px 13px 15px;
+    }
+
+    ul.filters-container {
+        padding-left: 0;
+    }
+
+    li.filters {
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+/* section rooms popular */
+
+    div.rooms-popular-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;        
+        padding: 20px 0px 0px 0px;
+    }
+
+/* popular */
+
+    div.popular-container {
+        width: 100%;
+        padding: 0px 0px 25px 0px;
+        border-radius: 0;
+    }
+
+    div.title-popular {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    img.img-popular {
+        height: 130px;
+        width: 130px;
+    }
+
+    .popular-container article {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+/* rooms */
+
+    section#rooms {
+        background: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    div.rooms-container {
+        padding-bottom: 20px;
+    }
+
+    #rooms article {
+        width: 100%;
+        border-color: #F2F2F2;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    #rooms h2, .more {
+        padding-left: 15px;
+    }
+
+/* activities */
+
+    div.activities-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    section#activities {
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    #activities article {
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    article.pomegues-activity-card, article.activity-card-small, article.activity-card-medium {
+        margin-left: 0;
+    }
+
+    #activities a.classic-link img {
+       height: 120px;
+    }
+
+    #activities h2 {
+        padding-left: 20px;
+    }
+
+/* footer */
+
+   footer {
+        flex-direction: column;
+        padding-right: 0px;
+        padding-left: 25px;
+    }
+
+}
+
+
+/* responsive tablette */
+
+@media (min-width:426px) and (max-width:768px) {
+
+/* Header */
+
+    img.logo {
+        padding-left: 20px;
+    }
+
+/* Search section */
+
+    section.search-section {
+        padding-left: 20px;
+    }
+
+    ul.filters-container {
+        padding-left: 0px;
+    }
+
+    li.filters {
+        margin-right: 5px;
+    }
+
+/* Rooms Popular */
+
+    div.rooms-popular-container {
+        flex-wrap: wrap;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 0px;
+    }
+
+/* Rooms */
+
+    section#rooms {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 0px;
+        margin-bottom: 30px;
+    }
+
+/* Popular */
+
+    div.popular-container {
+        width: 100%;
+    }
+
+/* Activities */
+
+    section#activities {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
+
+    div.activities-container {
+        flex-wrap: wrap;
+    }
+
+    .activity-card img {
+        width: 320px;
+    }
+
+    .activity-small-card-container img {
+        width: 360px;
+    }
+
+    .activity-small-card-container article {
+        margin-right: 0px;
+    }
+
+    .calanques, .dame {
+        margin-top: 30px;
+    }
+
+/* Footer */
+
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+
+
+
+}
