@@ -239,6 +239,7 @@ div.info-available-rooms {
 
 article  {
     overflow: hidden;
+    box-shadow: 1px 1px 13px 1px rgb(187, 181, 181);
 }
 
 .description-room-card {
@@ -328,10 +329,6 @@ article  {
 .activities-container {
     display:flex;
     justify-content: space-between;
-}
-
-.activity-card, .activity-card-small, .pomegues-activity-card, .activity-card-medium {
-    border: 3px solid #F2F2F2;
 }
 
 .activity-small-card-container {
@@ -564,7 +561,6 @@ footer {
         margin-right: 15px;
         margin-left: 15px;
         margin-bottom: 20px;
-        border: 2px solid #F2F2F2;
     }
 
     #rooms h2, .more {
@@ -591,7 +587,6 @@ footer {
         margin-bottom: 20px;
         margin-left: 15px;
         margin-right: 15px;
-        border: 2px solid #F2F2F2;
     }
 
     article.pomegues-activity-card, article.activity-card-small, article.activity-card-medium {
